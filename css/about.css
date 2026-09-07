@@ -1,0 +1,391 @@
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+
+/* Story Section */
+.about-story {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+.story-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
+}
+.story-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+.story-image:hover img {
+    transform: scale(1.02);
+}
+.story-content .story-tag {
+    display: inline-block;
+    background: var(--primary-maroon);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+.story-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+.story-content .lead {
+    font-size: 1.15rem;
+    color: var(--black);
+    font-weight: 500;
+}
+.story-content p {
+    color: var(--muted-text);
+    margin-bottom: 0.8rem;
+}
+.story-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin: 1.8rem 0 2rem;
+}
+.story-stats .stat-item {
+    text-align: center;
+}
+.story-stats .stat-number {
+    display: block;
+    font-family: var(--font-main);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary-maroon);
+    line-height: 1.1;
+}
+.story-stats .stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted-text);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Why Choose (already in main CSS, but ensure consistency) */
+.about-why-choose {
+    padding: 4.5rem 0;
+    background: var(--light-bg);
+}
+
+/* Team Section */
+.about-team {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+.team-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+}
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+.team-image {
+    height: 320px;
+    overflow: hidden;
+    background: var(--light-bg);
+}
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.team-card:hover .team-image img {
+    transform: scale(1.05);
+}
+.team-info {
+    padding: 1.2rem 1.5rem 1.5rem;
+    text-align: center;
+}
+.team-info h5 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.15rem;
+}
+.team-info .team-role {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-maroon);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+}
+.team-info p {
+    font-size: 0.85rem;
+    color: var(--muted-text);
+    margin-bottom: 0.8rem;
+}
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.team-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    color: var(--black);
+    font-size: 0.85rem;
+    transition: var(--transition-smooth);
+}
+.team-social a:hover {
+    background: var(--primary-maroon);
+    color: var(--white);
+}
+
+/* Reviews on About Page */
+.about-reviews {
+    padding: 4.5rem 0;
+    background: var(--light-bg);
+}
+.review-card.featured {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+    height: 100%;
+}
+.review-card.featured:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+.review-card.featured .stars {
+    color: #f5b342;
+    font-size: 0.95rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.8rem;
+}
+.review-card.featured p {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+.review-card.featured .review-author h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+}
+.review-card.featured .review-author span {
+    font-size: 0.75rem;
+    color: var(--muted-text);
+}
+
+/* FAQs Section */
+.about-faqs {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+.accordion-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px !important;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+}
+.accordion-item:last-child {
+    margin-bottom: 0;
+}
+.accordion-button {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1.2rem 1.5rem;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background: var(--light-bg);
+    color: var(--primary-maroon);
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--primary-maroon);
+}
+.accordion-button::after {
+    color: var(--primary-maroon);
+}
+.accordion-body {
+    padding: 1.2rem 1.5rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--muted-text);
+    line-height: 1.7;
+}
+
+/* About CTA */
+.about-cta {
+    background: var(--primary-maroon);
+    padding: 4rem 0;
+}
+.about-cta .cta-content h2 {
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+.about-cta .cta-content p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+}
+.about-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-cta .cta-buttons .btn {
+    padding: 0.8rem 2.8rem;
+    font-size: 1rem;
+}
+.about-cta .cta-buttons .btn-maroon {
+    background: var(--white);
+    color: var(--primary-maroon);
+    border-color: var(--white);
+}
+.about-cta .cta-buttons .btn-maroon:hover {
+    background: var(--dark-maroon);
+    color: var(--white);
+    border-color: var(--dark-maroon);
+}
+.about-cta .cta-buttons .btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+}
+.about-cta .cta-buttons .btn-outline-light:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+/* Responsive About Page */
+@media (max-width: 992px) {
+    .about-story {
+        padding: 3rem 0;
+    }
+    .story-content h2 {
+        font-size: 2rem;
+    }
+    .story-stats {
+        gap: 1.5rem;
+    }
+    .story-stats .stat-number {
+        font-size: 1.8rem;
+    }
+    .about-why-choose,
+    .about-team,
+    .about-reviews,
+    .about-faqs {
+        padding: 3rem 0;
+    }
+    .about-cta {
+        padding: 3rem 0;
+    }
+    .about-cta .cta-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-story {
+        padding: 2.5rem 0;
+    }
+    .story-content {
+        text-align: center;
+    }
+    .story-content h2 {
+        font-size: 1.8rem;
+    }
+    .story-stats {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    .story-stats .stat-number {
+        font-size: 1.5rem;
+    }
+    .story-stats .stat-label {
+        font-size: 0.7rem;
+    }
+    .about-why-choose,
+    .about-team,
+    .about-reviews,
+    .about-faqs {
+        padding: 2.5rem 0;
+    }
+    .about-cta .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    .about-cta .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    .about-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 1rem 1.2rem;
+    }
+    .accordion-body {
+        padding: 1rem 1.2rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-story {
+        padding: 2rem 0;
+    }
+    .story-content h2 {
+        font-size: 1.5rem;
+    }
+    .story-stats {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .story-stats .stat-item {
+        flex: 1 1 40%;
+    }
+    .team-card .team-info {
+        padding: 1rem;
+    }
+    .review-card.featured {
+        padding: 1.2rem;
+    }
+    .about-cta .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    .about-story .container,.about-why-choose .container,.about-team .container,.about-reviews .container,.about-faqs .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-why-choose .container,.about-team .container,.about-reviews .container,.about-faqs .container{
+        flex-direction: column;
+    }
+}

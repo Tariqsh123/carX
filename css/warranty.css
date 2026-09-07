@@ -1,0 +1,530 @@
+/* ============================================================
+   WARRANTY PAGE
+   ============================================================ */
+
+/* Warranty Hero */
+.warranty-hero {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+.warranty-hero-content .warranty-tag {
+    display: inline-block;
+    background: var(--primary-maroon);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 1.2rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+.warranty-hero-content .warranty-tag i {
+    margin-right: 0.3rem;
+}
+.warranty-hero-content h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+.warranty-hero-content .lead {
+    font-size: 1.15rem;
+    color: var(--black);
+    font-weight: 500;
+}
+.warranty-hero-content p {
+    color: var(--muted-text);
+    margin-bottom: 1.2rem;
+}
+.warranty-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1.5rem;
+    margin: 1.5rem 0 2rem;
+}
+.warranty-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--black);
+}
+.warranty-feature i {
+    color: var(--primary-maroon);
+    font-size: 1rem;
+}
+.warranty-hero-image {
+    position: relative;
+}
+.warranty-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow-hover);
+}
+.warranty-badge {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    background: var(--primary-maroon);
+    color: var(--white);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(101, 15, 27, 0.3);
+}
+.warranty-badge i {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.warranty-badge span {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+/* Coverage Section */
+.warranty-coverage {
+    padding: 4.5rem 0;
+    background: var(--light-bg);
+}
+.coverage-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+    height: 100%;
+}
+.coverage-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-maroon);
+}
+.coverage-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    background: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--primary-maroon);
+    transition: var(--transition-smooth);
+}
+.coverage-card:hover .coverage-icon {
+    background: var(--primary-maroon);
+    color: var(--white);
+}
+.coverage-card h5 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+.coverage-card p {
+    font-size: 0.85rem;
+    color: var(--muted-text);
+    margin: 0;
+}
+.coverage-note {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+.coverage-note p {
+    font-size: 0.85rem;
+    color: var(--muted-text);
+}
+.coverage-note i {
+    color: var(--primary-maroon);
+    margin-right: 0.5rem;
+}
+
+/* Warranty Benefits */
+.warranty-benefits {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+.benefits-image img {
+    border-radius: 16px;
+    box-shadow: var(--shadow-hover);
+}
+.benefits-content .benefits-tag {
+    display: inline-block;
+    background: var(--light-bg);
+    color: var(--primary-maroon);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 1.2rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+.benefits-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+.benefits-content p {
+    color: var(--muted-text);
+    margin-bottom: 1.5rem;
+}
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+.benefits-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+.benefits-list li i {
+    color: var(--primary-maroon);
+    font-size: 1.2rem;
+    margin-top: 0.15rem;
+}
+.benefits-list li strong {
+    display: block;
+    font-family: var(--font-main);
+    font-weight: 600;
+    color: var(--black);
+}
+.benefits-list li p {
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    margin: 0;
+}
+
+/* Claims Process */
+.warranty-claims {
+    padding: 4.5rem 0;
+    background: var(--light-bg);
+}
+.claim-step {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    transition: var(--transition-smooth);
+    height: 100%;
+}
+.claim-step:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+.claim-step .step-number {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-maroon);
+    color: var(--white);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.claim-step .step-icon {
+    font-size: 2.2rem;
+    color: var(--primary-maroon);
+    margin-bottom: 0.8rem;
+}
+.claim-step h5 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+}
+.claim-step p {
+    font-size: 0.85rem;
+    color: var(--muted-text);
+    margin: 0;
+}
+.claim-step p a {
+    color: var(--primary-maroon);
+}
+.claim-step p a:hover {
+    text-decoration: underline;
+}
+
+/* Extended Warranty */
+.extended-warranty {
+    padding: 4rem 0;
+    background: var(--black);
+    color: var(--white);
+}
+.extended-warranty h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+.extended-warranty p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+.extended-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+.extended-features span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+.extended-features span i {
+    color: var(--primary-maroon);
+}
+.extended-warranty .btn {
+    padding: 0.8rem 3rem;
+}
+
+/* Warranty FAQs */
+.warranty-faqs {
+    padding: 4.5rem 0;
+    background: var(--white);
+}
+
+/* Warranty CTA */
+.warranty-cta {
+    background: var(--primary-maroon);
+    padding: 4rem 0;
+}
+.warranty-cta .cta-content h2 {
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+.warranty-cta .cta-content p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+}
+.warranty-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.warranty-cta .cta-buttons .btn {
+    padding: 0.8rem 2.8rem;
+    font-size: 1rem;
+}
+.warranty-cta .cta-buttons .btn-maroon {
+    background: var(--white);
+    color: var(--primary-maroon);
+    border-color: var(--white);
+}
+.warranty-cta .cta-buttons .btn-maroon:hover {
+    background: var(--dark-maroon);
+    color: var(--white);
+    border-color: var(--dark-maroon);
+}
+.warranty-cta .cta-buttons .btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+}
+.warranty-cta .cta-buttons .btn-outline-light:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+/* Responsive Warranty Page */
+@media (max-width: 992px) {
+    .warranty-hero {
+        padding: 3rem 0;
+    }
+    .warranty-hero-content h2 {
+        font-size: 2.2rem;
+    }
+    .warranty-coverage,
+    .warranty-benefits,
+    .warranty-claims,
+    .warranty-faqs {
+        padding: 3rem 0;
+    }
+    .warranty-benefits .benefits-content h2 {
+        font-size: 2rem;
+    }
+    .extended-warranty {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    .extended-warranty p {
+        margin: 0 auto 1.5rem;
+    }
+    .extended-features {
+        justify-content: center;
+    }
+    .extended-warranty .btn {
+        margin-top: 1rem;
+    }
+    .warranty-cta {
+        padding: 3rem 0;
+    }
+    .warranty-cta .cta-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .warranty-hero {
+        padding: 2.5rem 0;
+    }
+    .warranty-hero-content h2 {
+        font-size: 1.8rem;
+    }
+    .warranty-hero-content .lead {
+        font-size: 1rem;
+    }
+    .warranty-features {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+    .warranty-badge {
+        bottom: -0.5rem;
+        right: -0.5rem;
+        padding: 0.7rem 1rem;
+    }
+    .warranty-badge i {
+        font-size: 1.5rem;
+    }
+    .warranty-badge span {
+        font-size: 0.75rem;
+    }
+    .warranty-coverage,
+    .warranty-benefits,
+    .warranty-claims,
+    .warranty-faqs {
+        padding: 2.5rem 0;
+    }
+    .benefits-content h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .benefits-content {
+        text-align: center;
+    }
+    .benefits-list li {
+        text-align: left;
+    }
+    .benefits-list {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .coverage-card {
+        padding: 1.5rem 1rem;
+    }
+    .claim-step {
+        padding: 1.5rem 1rem;
+    }
+    .extended-warranty h2 {
+        font-size: 1.8rem;
+    }
+    .extended-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .warranty-cta .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    .warranty-cta .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    .warranty-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .warranty-hero {
+        padding: 2rem 0;
+    }
+    .warranty-hero-content h2 {
+        font-size: 1.5rem;
+    }
+    .warranty-hero-content .warranty-tag {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.8rem;
+    }
+    .warranty-badge {
+        padding: 0.5rem 0.8rem;
+    }
+    .warranty-badge i {
+        font-size: 1.2rem;
+    }
+    .warranty-badge span {
+        font-size: 0.65rem;
+    }
+    .coverage-card {
+        padding: 1.2rem 0.8rem;
+    }
+    .coverage-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .benefits-content h2 {
+        font-size: 1.5rem;
+    }
+    .benefits-list li {
+        flex-direction: column;
+        gap: 0.3rem;
+        text-align: center;
+    }
+    .benefits-list li i {
+        margin: 0 auto;
+    }
+    .claim-step .step-icon {
+        font-size: 1.8rem;
+    }
+    .extended-warranty h2 {
+        font-size: 1.5rem;
+    }
+    .extended-warranty p {
+        font-size: 0.95rem;
+    }
+    .extended-warranty .btn {
+        padding: 0.6rem 2rem;
+        font-size: 0.9rem;
+    }
+    .warranty-cta .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    .warranty-cta .cta-content p {
+        font-size: 0.95rem;
+    }
+    .warranty-hero .container , .warranty-coverage .container , .warranty-benefits .container,.warranty-claims .container,.extended-warranty .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .warranty-coverage .container,.warranty-claims .container{
+        flex-direction: column;
+    }
+    .warranty-coverage .container .row .col-lg-3 {
+        width: 100%;
+    }
+}

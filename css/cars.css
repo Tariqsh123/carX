@@ -1,0 +1,207 @@
+/* ============================================================
+   PAGE HEADER (for cars.html, car-details.html, etc.)
+   ============================================================ */
+.page-header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+.page-header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.3) 100%);
+    display: flex;
+    align-items: center;
+}
+.page-header h1 {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.page-header .breadcrumb-text {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+}
+.page-header .breadcrumb-text a {
+    color: rgba(255,255,255,0.7);
+    transition: var(--transition-smooth);
+}
+.page-header .breadcrumb-text a:hover {
+    color: var(--white);
+}
+
+/* ============================================================
+   LISTING SECTION (cars.html)
+   ============================================================ */
+.listing-section {
+    padding: 4rem 0;
+    background: var(--light-bg);
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+    background: var(--white);
+    padding: 1.8rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    position: sticky;
+    top: 100px;
+}
+.filter-title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border-color);
+}
+.filter-title i {
+    color: var(--primary-maroon);
+    margin-right: 0.5rem;
+}
+.filter-group {
+    margin-bottom: 1.2rem;
+}
+.filter-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted-text);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.filter-group .form-select {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--white);
+}
+.filter-group .form-select:focus {
+    border-color: var(--primary-maroon);
+    box-shadow: 0 0 0 3px rgba(101, 15, 27, 0.12);
+}
+.filter-actions .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+/* Results Toolbar */
+.results-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 1.5rem;
+}
+.results-count {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--black);
+}
+.results-sort {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.results-sort label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted-text);
+    margin: 0;
+}
+.results-sort .form-select {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    width: auto;
+    min-width: 160px;
+}
+.results-sort .form-select:focus {
+    border-color: var(--primary-maroon);
+    box-shadow: 0 0 0 3px rgba(101, 15, 27, 0.12);
+}
+
+/* Responsive for listing */
+@media (max-width: 992px) {
+    .filter-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        min-height: 180px;
+    }
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    .results-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .results-sort {
+        justify-content: center;
+    }
+    .results-sort .form-select {
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .listing-section {
+        padding: 2rem 0;
+    }
+    .filter-sidebar {
+        padding: 1.2rem 1rem;
+    }
+    .results-toolbar {
+        padding: 0.8rem 1rem;
+    }
+    .results-count {
+        font-size: 0.9rem;
+    }
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+    .listing-section .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listing-section .col-lg-9{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-overlay .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

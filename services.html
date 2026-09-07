@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarX | Our Services – Servicing, MOT, Repairs &amp; More</title>
+    <meta name="description" content="Explore our full range of services at CarX. From vehicle servicing and MOT to repairs, diagnostics, tyres, and valeting – we've got you covered." />
+    <meta property="og:title" content="CarX | Our Services" />
+    <meta property="og:description" content="Explore our full range of services at CarX. From vehicle servicing and MOT to repairs, diagnostics, tyres, and valeting." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts - Montserrat only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cars.css" />
+    <link rel="stylesheet" href="css/services.css" />
+</head>
+<body>
+
+    <!-- ========== TOP MARQUEE ========== -->
+    <div class="top-marquee">
+        <div class="marquee-track">
+            <span>WELCOME TO CARX</span>
+            <span>•</span>
+            <span>QUALITY USED CARS</span>
+            <span>•</span>
+            <span>5 STAR CUSTOMER SERVICE</span>
+            <span>•</span>
+            <span>COMPETITIVE VALUATIONS</span>
+            <span>•</span>
+            <span>FINANCE AVAILABLE</span>
+            <span>•</span>
+            <span>PART EXCHANGE WELCOME</span>
+            <span>•</span>
+            <span>WELCOME TO CARX</span>
+            <span>•</span>
+            <span>QUALITY USED CARS</span>
+            <span>•</span>
+            <span>5 STAR CUSTOMER SERVICE</span>
+            <span>•</span>
+            <span>COMPETITIVE VALUATIONS</span>
+            <span>•</span>
+            <span>FINANCE AVAILABLE</span>
+            <span>•</span>
+            <span>PART EXCHANGE WELCOME</span>
+            <span>•</span>
+        </div>
+    </div>
+
+    <!-- ========== MAIN HEADER ========== -->
+    <header class="main-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-md-6 col-8 header-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="CarX Logo" class="logo-img" />
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6 col-4 header-contact text-end">
+                    <div class="contact-stack">
+                        <a href="tel:01610000000" class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0161 000 0000</span>
+                        </a>
+                        <a href="mailto:hello@carx.co.uk" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@carx.co.uk</span>
+                        </a>
+                        <span class="contact-item address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Oldham, Greater Manchester</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== SECOND NAVIGATION ========== -->
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Used Cars Mega Dropdown -->
+                    <li class="nav-item dropdown megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Used Cars <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu mega-dropdown">
+                            <div class="container">
+                                <div class="row g-4">
+                                    <div class="col-lg-3 col-md-6">
+                                        <h6 class="mega-title">By Type</h6>
+                                        <ul class="mega-list">
+                                            <li><a href="cars.html">All Vehicles</a></li>
+                                            <li><a href="cars.html?filter=car">Cars</a></li>
+                                            <li><a href="cars.html?filter=van">Vans</a></li>
+                                            <li><a href="cars.html?filter=motorhome">Motorhomes</a></li>
+                                            <li><a href="cars.html?filter=latest">Latest Arrivals</a></li>
+                                            <li><a href="cars.html?filter=automatic">Automatic</a></li>
+                                            <li><a href="cars.html?filter=manual">Manual</a></li>
+                                            <li><a href="cars.html?filter=petrol">Petrol</a></li>
+                                            <li><a href="cars.html?filter=diesel">Diesel</a></li>
+                                            <li><a href="cars.html?filter=hybrid">Hybrid</a></li>
+                                            <li><a href="cars.html?filter=electric">Electric</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <h6 class="mega-title">Body Style</h6>
+                                        <ul class="mega-list">
+                                            <li><a href="cars.html?filter=hatchback">Hatchbacks</a></li>
+                                            <li><a href="cars.html?filter=saloon">Saloons</a></li>
+                                            <li><a href="cars.html?filter=estate">Estates</a></li>
+                                            <li><a href="cars.html?filter=suv">SUVs</a></li>
+                                            <li><a href="cars.html?filter=mpv">MPVs</a></li>
+                                            <li><a href="cars.html?filter=sports">Sports Cars</a></li>
+                                            <li><a href="cars.html?filter=4x4">4x4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <h6 class="mega-title">Price Range</h6>
+                                        <ul class="mega-list">
+                                            <li><a href="cars.html?filter=under5000">Under £5,000</a></li>
+                                            <li><a href="cars.html?filter=under10000">Under £10,000</a></li>
+                                            <li><a href="cars.html?filter=family">Family Vehicles</a></li>
+                                            <li><a href="cars.html?filter=first">First Vehicles</a></li>
+                                            <li><a href="cars.html?filter=lowmileage">Low Mileage</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="mega-featured">
+                                            <span class="badge bg-maroon">Featured</span>
+                                            <p class="mb-1"><strong>BMW 3 Series</strong></p>
+                                            <small>2022 • 28,500 miles</small>
+                                            <p class="mega-price">£18,995</p>
+                                            <a href="car-details.html?id=1" class="btn btn-maroon btn-sm">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Used Vans Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Used Vans <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cars.html?filter=van">All Used Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=small-van">Small Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=medium-van">Medium Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=large-van">Large Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=van-automatic">Automatic Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=van-diesel">Diesel Vans</a></li>
+                            <li><a class="dropdown-item" href="cars.html?filter=van-lowmileage">Low Mileage Vans</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="cars.html?filter=motorhome">Used Motorhomes</a></li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">Vehicle Servicing</a></li>
+                            <li><a class="dropdown-item" href="services.html#mot">MOT</a></li>
+                            <li><a class="dropdown-item" href="services.html#repairs">Vehicle Repairs</a></li>
+                            <li><a class="dropdown-item" href="services.html#diagnostics">Diagnostics</a></li>
+                            <li><a class="dropdown-item" href="services.html#tyres">Tyres</a></li>
+                            <li><a class="dropdown-item" href="services.html#ac">Air Conditioning</a></li>
+                            <li><a class="dropdown-item" href="services.html#valeting">Valeting</a></li>
+                            <li><a class="dropdown-item" href="services.html#partexchange">Part Exchange</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="warranty.html">Warranty</a></li>
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header" style="background-image: url('images/hero-img.jpg');">
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Our Services</h1>
+                        <p class="breadcrumb-text"><a href="index.html">Home</a> / Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES GRID ========== -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Professional Services</h2>
+                <p class="section-subtitle">From routine servicing to complex repairs, our expert team has you covered.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Service 1: Vehicle Servicing -->
+                <div class="col-lg-4 col-md-6" id="servicing">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h4>Vehicle Servicing</h4>
+                        <p>Keep your vehicle running smoothly with our comprehensive servicing packages. From interim to full services, we follow manufacturer guidelines using quality parts.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Manufacturer-approved service schedules</li>
+                            <li><i class="fas fa-check-circle"></i> Genuine or quality equivalent parts</li>
+                            <li><i class="fas fa-check-circle"></i> Full digital service history</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: MOT -->
+                <div class="col-lg-4 col-md-6" id="mot">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h4>MOT Testing</h4>
+                        <p>We offer full MOT testing for all vehicle classes. Our experienced technicians ensure your vehicle meets all legal requirements for road safety.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Class 4, 5, and 7 MOT testing</li>
+                            <li><i class="fas fa-check-circle"></i> Free retest within 10 working days</li>
+                            <li><i class="fas fa-check-circle"></i> Online booking available</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Vehicle Repairs -->
+                <div class="col-lg-4 col-md-6" id="repairs">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Vehicle Repairs</h4>
+                        <p>From minor fixes to major repairs, our team handles it all. We use diagnostic equipment to quickly identify and resolve issues.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Engine, transmission &amp; brake repairs</li>
+                            <li><i class="fas fa-check-circle"></i> Suspension &amp; steering work</li>
+                            <li><i class="fas fa-check-circle"></i> Warranty-approved repairs</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Diagnostics -->
+                <div class="col-lg-4 col-md-6" id="diagnostics">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4>Diagnostics</h4>
+                        <p>Our advanced diagnostic equipment pinpoints issues quickly and accurately, saving you time and money on unnecessary repairs.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Engine management system</li>
+                            <li><i class="fas fa-check-circle"></i> ABS, airbag &amp; electrical systems</li>
+                            <li><i class="fas fa-check-circle"></i> Fast, accurate fault finding</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Tyres -->
+                <div class="col-lg-4 col-md-6" id="tyres">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Tyres</h4>
+                        <p>We supply and fit tyres from all leading brands. Our team ensures correct fitting, balancing, and alignment for optimal performance and safety.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> All major tyre brands</li>
+                            <li><i class="fas fa-check-circle"></i> Wheel balancing &amp; alignment</li>
+                            <li><i class="fas fa-check-circle"></i> Competitive pricing</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Air Conditioning -->
+                <div class="col-lg-4 col-md-6" id="ac">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Air Conditioning</h4>
+                        <p>Stay cool in summer and warm in winter. We offer full air conditioning services including re-gas, repairs, and system checks.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Air conditioning re-gas</li>
+                            <li><i class="fas fa-check-circle"></i> Compressor and system repairs</li>
+                            <li><i class="fas fa-check-circle"></i> Antibacterial treatment</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 7: Valeting -->
+                <div class="col-lg-4 col-md-6" id="valeting">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h4>Valeting</h4>
+                        <p>Give your vehicle the attention it deserves with our professional valeting services. Interior and exterior deep cleaning to showroom standard.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Interior deep clean</li>
+                            <li><i class="fas fa-check-circle"></i> Exterior polish &amp; wax</li>
+                            <li><i class="fas fa-check-circle"></i> Engine bay cleaning</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 8: Part Exchange -->
+                <div class="col-lg-4 col-md-6" id="partexchange">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h4>Part Exchange</h4>
+                        <p>Looking to upgrade? Get a competitive, no-obligation valuation for your current vehicle and put it towards your next purchase.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Free, no-obligation valuation</li>
+                            <li><i class="fas fa-check-circle"></i> Quick and easy process</li>
+                            <li><i class="fas fa-check-circle"></i> Instant quotes available</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-maroon btn-sm">Get Valuation</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="images/footer-logo.png" alt="CarX Logo" class="footer-logo" />
+                        <p>Quality used cars, vans, and motorhomes with exceptional customer service. We're here to help you find your perfect vehicle.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Used Cars</a></li>
+                        <li><a href="cars.html?filter=van">Used Vans</a></li>
+                        <li><a href="cars.html?filter=motorhome">Motorhomes</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="warranty.html">Warranty</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Vehicles</h6>
+                    <ul>
+                        <li><a href="cars.html?filter=hatchback">Hatchbacks</a></li>
+                        <li><a href="cars.html?filter=saloon">Saloons</a></li>
+                        <li><a href="cars.html?filter=suv">SUVs</a></li>
+                        <li><a href="cars.html?filter=mpv">MPVs</a></li>
+                        <li><a href="cars.html?filter=4x4">4x4</a></li>
+                        <li><a href="cars.html?filter=sports">Sports Cars</a></li>
+                        <li><a href="cars.html?filter=van">Vans</a></li>
+                        <li><a href="cars.html?filter=motorhome">Motorhomes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Contact</h6>
+                    <ul class="footer-contact-list">
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:01610000000">0161 000 0000</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@carx.co.uk">hello@carx.co.uk</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Oldham, Greater Manchester, UK</li>
+                        <li><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM, Sat: 9AM–5PM, Sun: 10AM–4PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP ========== -->
+    <a href="https://wa.me/441610000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">WhatsApp Us<br />0161 000 0000</span>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
