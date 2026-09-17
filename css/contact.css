@@ -1,6 +1,7 @@
 /* ============================================================
    CONTACT PAGE
    ============================================================ */
+
 .contact-page-section {
     padding: 4.5rem 0;
     background: var(--white);
@@ -41,14 +42,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-maroon);
+    color: var(--gold-dark);
     font-size: 1.2rem;
     transition: var(--transition-smooth);
 }
 
 .contact-detail-item:hover .icon-wrapper {
-    background: var(--primary-maroon);
-    color: var(--white);
+    background-color: var(--gold-1);
+    background-image: var(--gradient-gold);
+    color: var(--black);
     transform: scale(1.05);
 }
 
@@ -70,7 +72,7 @@
 }
 
 .contact-detail-item p a {
-    color: var(--primary-maroon);
+    color: var(--gold-dark);
 }
 
 .contact-detail-item p a:hover {
@@ -112,17 +114,20 @@
 }
 
 .contact-social .social-links a:hover {
-    background: var(--primary-maroon);
-    color: var(--white);
+    background-color: var(--gold-1);
+    background-image: var(--gradient-gold);
+    color: var(--black);
     transform: translateY(-3px);
 }
 
+
 /* Contact Form */
+
 .contact-page-form {
     background: var(--light-bg);
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: var(--shadow-card);
+    /* box-shadow removed */
 }
 
 .contact-page-form h3 {
@@ -159,8 +164,9 @@
 
 .contact-page-form .form-control:focus,
 .contact-page-form .form-select:focus {
-    border-color: var(--primary-maroon);
-    box-shadow: 0 0 0 3px rgba(101, 15, 27, 0.12);
+    border-color: var(--gold-1);
+    outline: none;
+    box-shadow: none;
 }
 
 .contact-page-form .btn {
@@ -168,7 +174,9 @@
     font-size: 1rem;
 }
 
+
 /* Responsive Contact Page */
+
 @media (max-width: 992px) {
     .contact-page-section {
         padding: 3rem 0;
@@ -261,7 +269,7 @@
     .map-container iframe {
         height: 250px;
     }
-    .contact-page-section .container{
+    .contact-page-section .container {
         display: flex;
         flex-direction: column;
         justify-content: center;

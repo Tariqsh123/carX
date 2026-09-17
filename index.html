@@ -160,7 +160,7 @@
                         </div>
                     </li>
 
-                    <!-- Used Vans Dropdown (now pointing to cars.html with van filters) -->
+                    <!-- Used Vans Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             Used Vans <i class="fas fa-chevron-down"></i>
@@ -176,7 +176,7 @@
                         </ul>
                     </li>
 
-                    <!-- Used Motorhomes (now pointing to cars.html with motorhome filter) -->
+                    <!-- Used Motorhomes -->
                     <li class="nav-item"><a class="nav-link" href="cars.html?filter=motorhome">Used Motorhomes</a></li>
 
                     <!-- Services Dropdown -->
@@ -197,10 +197,7 @@
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="warranty.html">Warranty</a></li>
-
-                    <!-- About Dropdown -->
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -552,7 +549,6 @@
                 <p class="section-subtitle">Real reviews from real customers who found their perfect car at CarX.</p>
             </div>
             <div class="reviews-slider" id="reviewsSlider">
-                <!-- static review cards (same as before) -->
                 <div class="review-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     <p>"Excellent service from start to finish. The whole process was simple and professional."</p>
@@ -691,31 +687,37 @@
     <script src="js/cars.js"></script>
     <script src="js/filters.js"></script>
 
-    <!-- ========== CARD CUSTOMIZATION SCRIPT ========== -->
+    <!-- ========== CARD CUSTOMIZATION + VIEW DETAILS BUTTON SCRIPT ========== -->
     <script>
         (function() {
+            /* ============================================================
+               Clean the card, extract the details link, and add a
+               "View Details" button that opens car-details.html?id=X
+               ============================================================ */
             function processCard(card) {
-                // 1. Remove meta elements
-                var metaSelectors = ['.vehicle-meta', '.car-meta', '.card-meta', '.meta'];
-                metaSelectors.forEach(function(sel) {
+                // Guard: already processed
+                if (card.dataset.detailProcessed === 'true') return;
+                card.dataset.detailProcessed = 'true';
+
+                /* ---- 1. Remove meta elements ---- */
+                ['.vehicle-meta', '.car-meta', '.card-meta', '.meta'].forEach(function(sel) {
                     card.querySelectorAll(sel).forEach(function(el) {
                         el.remove();
                     });
                 });
 
-                // 2. Remove description elements
-                var descSelectors = [
+                /* ---- 2. Remove description elements ---- */
+                [
                     '.vehicle-description', '.car-description', '.card-description',
                     '.description', '.desc', '.vehicle-desc', '.car-desc',
                     'p.description', 'p.desc'
-                ];
-                descSelectors.forEach(function(sel) {
+                ].forEach(function(sel) {
                     card.querySelectorAll(sel).forEach(function(el) {
                         el.remove();
                     });
                 });
 
-                // 3. Remove any <p> that is not a price (aggressive description removal)
+                /* ---- 3. Remove any <p> that is not a price ---- */
                 card.querySelectorAll('p').forEach(function(p) {
                     if (!p.classList.contains('price') &&
                         !p.classList.contains('vehicle-price') &&
@@ -725,38 +727,16 @@
                     }
                 });
 
-                // 4. Remove "View Details" and "Enquire" text elements
-                var removeTexts = ['view details', 'enquire', 'enquire now', 'view detail'];
-                card.querySelectorAll('*').forEach(function(el) {
-                    if (el.children.length === 0) { // leaf node
-                        var txt = (el.textContent || '').trim().toLowerCase();
-                        if (removeTexts.indexOf(txt) !== -1) {
-                            el.remove();
-                        }
-                    }
-                });
-
-                // 5. Extract main link href and remove all anchors/buttons
+                /* ---- 4. Extract the details link (before removing anchors) ---- */
                 var mainHref = null;
-                var anchors = card.querySelectorAll('a');
-                anchors.forEach(function(a) {
+                card.querySelectorAll('a').forEach(function(a) {
                     var href = a.getAttribute('href') || '';
                     if (href.indexOf('car-details.html') !== -1) {
                         mainHref = href;
                     }
-                    // Replace anchor with its children to keep content (like image)
-                    while (a.firstChild) {
-                        a.parentNode.insertBefore(a.firstChild, a);
-                    }
-                    a.remove();
                 });
 
-                // Remove buttons
-                card.querySelectorAll('button, .btn, input[type="button"], input[type="submit"]').forEach(function(el) {
-                    el.remove();
-                });
-
-                // If no mainHref, try data-id
+                /* ---- 5. Fallback: use data-id ---- */
                 if (!mainHref) {
                     var id = card.getAttribute('data-id') || card.getAttribute('data-car-id');
                     if (id) {
@@ -764,20 +744,68 @@
                     }
                 }
 
-                // 6. Make card clickable
-                if (mainHref) {
-                    card.style.cursor = 'pointer';
-                    if (!card.dataset.clickable) {
-                        card.dataset.clickable = 'true';
-                        card.addEventListener('click', function(e) {
-                            // Ignore clicks on interactive elements (if any remain)
-                            if (e.target.closest('a, button, input, select, textarea')) return;
-                            window.location.href = mainHref;
-                        });
+                /* ---- 6. Remove old anchors (keep their inner content) ---- */
+                card.querySelectorAll('a').forEach(function(a) {
+                    while (a.firstChild) {
+                        a.parentNode.insertBefore(a.firstChild, a);
                     }
+                    a.remove();
+                });
+
+                /* ---- 7. Remove old buttons ---- */
+                card.querySelectorAll('button, .btn, input[type="button"], input[type="submit"]').forEach(function(el) {
+                    el.remove();
+                });
+
+                /* ---- 8. Remove leftover "View Details" / "Enquire" text ---- */
+                var removeTexts = ['view details', 'enquire', 'enquire now', 'view detail', 'read more'];
+                card.querySelectorAll('*').forEach(function(el) {
+                    if (el.children.length === 0) {
+                        var txt = (el.textContent || '').trim().toLowerCase();
+                        if (removeTexts.indexOf(txt) !== -1) {
+                            el.remove();
+                        }
+                    }
+                });
+
+                if (!mainHref) return; // nothing to link to
+
+                /* ---- 9. Add the "View Details" button ---- */
+                var btn = document.createElement('a');
+                btn.href = mainHref;
+                btn.className = 'btn btn-maroon btn-sm view-details-btn';
+                btn.innerHTML = 'View Details <i class="fas fa-arrow-right ms-1"></i>';
+                btn.style.marginTop = '0.6rem';
+                btn.style.display = 'inline-block';
+
+                // Best placement: inside .card-actions, else .card-body, else card
+                var actionsWrap = card.querySelector('.card-actions');
+                var bodyWrap = card.querySelector('.card-body');
+
+                if (actionsWrap) {
+                    actionsWrap.appendChild(btn);
+                } else if (bodyWrap) {
+                    bodyWrap.appendChild(btn);
+                } else {
+                    card.appendChild(btn);
+                }
+
+                /* ---- 10. Make the whole card clickable ---- */
+                card.style.cursor = 'pointer';
+                card.setAttribute('data-detail-url', mainHref);
+                if (!card.dataset.clickable) {
+                    card.dataset.clickable = 'true';
+                    card.addEventListener('click', function(e) {
+                        // If user clicked the button (or any link), let the anchor handle it
+                        if (e.target.closest('a, button, input, select, textarea')) return;
+                        window.location.href = card.getAttribute('data-detail-url');
+                    });
                 }
             }
 
+            /* ============================================================
+               Find all cards inside the slider and process them
+               ============================================================ */
             function processAllCards() {
                 var slider = document.getElementById('latestOffersSlider');
                 if (!slider) return;
@@ -790,10 +818,9 @@
                     });
                 });
 
-                // Fallback: find any element containing a car-details link
+                // Fallback: find cards via any car-details link
                 if (cards.length === 0) {
-                    var links = slider.querySelectorAll('a[href*="car-details.html"]');
-                    links.forEach(function(link) {
+                    slider.querySelectorAll('a[href*="car-details.html"]').forEach(function(link) {
                         var parent = link.parentElement;
                         while (parent && parent !== slider) {
                             if (parent.classList.contains('slick-slide') || parent.parentElement === slider) {
@@ -810,6 +837,9 @@
                 cards.forEach(processCard);
             }
 
+            /* ============================================================
+               Init + watch for dynamically injected cards
+               ============================================================ */
             document.addEventListener('DOMContentLoaded', function() {
                 processAllCards();
                 var slider = document.getElementById('latestOffersSlider');
@@ -821,6 +851,12 @@
                         subtree: true
                     });
                 }
+            });
+
+            // Extra safety pass after Slick finishes rendering
+            window.addEventListener('load', function() {
+                setTimeout(processAllCards, 400);
+                setTimeout(processAllCards, 1200);
             });
         })();
     </script>

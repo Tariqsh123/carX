@@ -1,6 +1,7 @@
 /* ============================================================
    SERVICES PAGE
    ============================================================ */
+
 .services-grid-section {
     padding: 4.5rem 0;
     background: var(--white);
@@ -11,15 +12,16 @@
     padding: 2rem 1.8rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-card);
+    /* box-shadow removed */
     transition: var(--transition-smooth);
     height: 100%;
     text-align: center;
 }
+
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-maroon);
+    /* box-shadow removed */
+    border-color: var(--gold-1);
 }
 
 .service-card .service-icon {
@@ -32,12 +34,14 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: var(--primary-maroon);
+    color: var(--gold-dark);
     transition: var(--transition-smooth);
 }
+
 .service-card:hover .service-icon {
-    background: var(--primary-maroon);
-    color: var(--white);
+    background-color: var(--gold-1);
+    background-image: var(--gradient-gold);
+    color: var(--black);
 }
 
 .service-card h4 {
@@ -48,7 +52,7 @@
     color: var(--black);
 }
 
-.service-card > p {
+.service-card>p {
     font-size: 0.9rem;
     color: var(--muted-text);
     margin-bottom: 1rem;
@@ -60,6 +64,7 @@
     margin: 0 0 1.2rem 0;
     text-align: left;
 }
+
 .service-features li {
     display: flex;
     align-items: center;
@@ -68,8 +73,9 @@
     color: var(--muted-text);
     padding: 0.25rem 0;
 }
+
 .service-features li i {
-    color: var(--primary-maroon);
+    color: var(--gold-dark);
     font-size: 0.85rem;
     min-width: 18px;
 }
@@ -79,7 +85,9 @@
     font-size: 0.8rem;
 }
 
+
 /* Responsive */
+
 @media (max-width: 992px) {
     .services-grid-section {
         padding: 3rem 0;
@@ -125,10 +133,10 @@
     .service-card h4 {
         font-size: 0.95rem;
     }
-    .service-card > p {
+    .service-card>p {
         font-size: 0.85rem;
     }
-    .services-grid-section .container{
+    .services-grid-section .container {
         display: flex;
         justify-content: center;
         align-items: center;
