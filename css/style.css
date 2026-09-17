@@ -324,7 +324,7 @@ p {
 }
 
 .header-logo .logo-img {
-    height: 120px;
+    height: 100px;
     width: auto;
 }
 
@@ -651,7 +651,7 @@ p {
 
 .trust-strip {
     background: var(--white);
-    padding: 3.5rem 0;
+    padding: 60px 0;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -694,7 +694,7 @@ p {
    ============================================================ */
 
 .latest-offers {
-    padding: 4.5rem 0;
+    padding: 60px 0;
     background: var(--light-bg);
 }
 
@@ -911,7 +911,7 @@ p {
    ============================================================ */
 
 .image-collage {
-    padding: 4.5rem 0;
+    padding: 60px 0;
     background: var(--light-bg);
 }
 
@@ -1150,7 +1150,7 @@ p {
    ============================================================ */
 
 .valuation-section {
-    padding: 4.5rem 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, #f7f7f7 0%, #ededed 100%);
 }
 
@@ -1181,12 +1181,9 @@ p {
 }
 
 .valuation-form {
-    background: var(--white);
+    background: var(--gold-1);
     padding: 2rem;
     border-radius: 12px;
-    border-top: 4px solid transparent;
-    border-image: var(--gradient-silver) 1;
-    border-image-slice: 1 0 0 0;
 }
 
 .valuation-form h5 {
@@ -1218,6 +1215,11 @@ p {
     outline: none;
 }
 
+.valuation-form .btn-maroon {
+    background: black !important;
+    color: white !important;
+}
+
 
 /* ============================================================
    CUSTOMER REVIEWS
@@ -1230,6 +1232,7 @@ p {
 
 .reviews-slider .slick-slide {
     padding: 0 12px;
+    margin-left: 5px;
 }
 
 .review-card {
@@ -1669,7 +1672,7 @@ p {
     }
     /* Header */
     .main-header {
-        padding: 0.5rem 0;
+        padding: 0 0;
     }
     .header-logo {
         display: flex;
@@ -1678,7 +1681,7 @@ p {
         width: 100%;
     }
     .header-logo .logo-img {
-        height: 120px;
+        height: 80px;
     }
     .header-contact .contact-stack {
         align-items: flex-end;
@@ -1732,7 +1735,7 @@ p {
     }
     /* Trust Strip */
     .trust-strip {
-        padding: 2rem 0;
+        padding: 40px 0;
     }
     .trust-strip .trust-item i {
         font-size: 1.8rem;
@@ -1745,7 +1748,7 @@ p {
     }
     /* Latest Offers */
     .latest-offers {
-        padding: 3rem 0;
+        padding: 40px 0;
     }
     .vehicle-card .card-img-wrap {
         height: 160px;
@@ -1773,7 +1776,7 @@ p {
     }
     /* Image Collage */
     .image-collage {
-        padding: 3rem 0;
+        padding: 40px 0;
     }
     .collage-large {
         min-height: 220px;
@@ -1912,6 +1915,15 @@ p {
     }
     .main-footer .social-links {
         justify-content: center;
+    }
+    .footer-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-footer .footer-brand .footer-logo {
+        max-height: auto;
     }
     .footer-bottom {
         flex-direction: column;
@@ -2108,6 +2120,8 @@ p {
     }
     .footer-contact-list li {
         font-size: 0.8rem;
+        justify-content: center;
+        align-items: center;
     }
     .main-footer .footer-brand p {
         font-size: 0.8rem;
@@ -2421,4 +2435,8 @@ video {
         align-items: center;
         flex-direction: column;
     }
+}
+
+.dropdown-toggle::after {
+    display: none;
 }

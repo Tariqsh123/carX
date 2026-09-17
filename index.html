@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CarX | Quality Used Cars in Oldham</title>
-    <meta name="description" content="Discover quality used cars at CarX. Browse our latest vehicles, explore finance options, get a valuation and contact our experienced dealership team." />
-    <meta property="og:title" content="CarX | Quality Used Cars in Oldham" />
-    <meta property="og:description" content="Discover quality used cars at CarX. Browse our latest vehicles, explore finance options, get a valuation and contact our experienced dealership team." />
+    <title>M &amp; S Import LTD | Quality Used Cars in Oldham</title>
+    <meta name="description" content="Discover quality used cars at M &amp; S Import LTD. Browse our latest vehicles, explore finance options, get a valuation and contact our experienced dealership team." />
+    <meta property="og:title" content="M &amp; S Import LTD | Quality Used Cars in Oldham" />
+    <meta property="og:description" content="Discover quality used cars at M &amp; S Import LTD. Browse our latest vehicles, explore finance options, get a valuation and contact our experienced dealership team." />
     <meta property="og:type" content="website" />
 
     <!-- Google Fonts - Montserrat only -->
@@ -27,6 +27,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cars.css" />
 </head>
 
 <body>
@@ -34,11 +35,11 @@
     <!-- ========== TOP MARQUEE ========== -->
     <div class="top-marquee">
         <div class="marquee-track">
-            <span>WELCOME TO CARX</span>
+            <span>WELCOME TO M &amp; S IMPORT LTD</span>
             <span>•</span>
             <span>QUALITY USED CARS</span>
             <span>•</span>
-            <span>5 STAR CUSTOMER SERVICE</span>
+            <span>EXCEPTIONAL CUSTOMER SERVICE</span>
             <span>•</span>
             <span>COMPETITIVE VALUATIONS</span>
             <span>•</span>
@@ -46,11 +47,11 @@
             <span>•</span>
             <span>PART EXCHANGE WELCOME</span>
             <span>•</span>
-            <span>WELCOME TO CARX</span>
+            <span>WELCOME TO M &amp; S IMPORT LTD</span>
             <span>•</span>
             <span>QUALITY USED CARS</span>
             <span>•</span>
-            <span>5 STAR CUSTOMER SERVICE</span>
+            <span>EXCEPTIONAL CUSTOMER SERVICE</span>
             <span>•</span>
             <span>COMPETITIVE VALUATIONS</span>
             <span>•</span>
@@ -65,23 +66,20 @@
     <header class="main-header">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <!-- Logo -->
                 <div class="col-md-6 col-8 header-logo">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="CarX Logo" class="logo-img" />
+                        <img src="images/logo.png" alt="M &amp; S Import LTD Logo" class="logo-img" />
                     </a>
                 </div>
-
-                <!-- Contact Info -->
                 <div class="col-md-6 col-4 header-contact text-end">
                     <div class="contact-stack">
                         <a href="tel:01610000000" class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <span>0161 000 0000</span>
                         </a>
-                        <a href="mailto:hello@carx.co.uk" class="contact-item">
+                        <a href="mailto:hello@msimportltd.co.uk" class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>hello@carx.co.uk</span>
+                            <span>hello@msimportltd.co.uk</span>
                         </a>
                         <span class="contact-item address">
                             <i class="fas fa-map-marker-alt"></i>
@@ -103,7 +101,6 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
 
-                    <!-- Used Cars Mega Dropdown -->
                     <li class="nav-item dropdown megamenu">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             Used Cars <i class="fas fa-chevron-down"></i>
@@ -160,7 +157,6 @@
                         </div>
                     </li>
 
-                    <!-- Used Vans Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             Used Vans <i class="fas fa-chevron-down"></i>
@@ -176,10 +172,8 @@
                         </ul>
                     </li>
 
-                    <!-- Used Motorhomes -->
                     <li class="nav-item"><a class="nav-link" href="cars.html?filter=motorhome">Used Motorhomes</a></li>
 
-                    <!-- Services Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             Services <i class="fas fa-chevron-down"></i>
@@ -210,7 +204,7 @@
             <div class="container">
                 <div class="row align-items-center min-vh-60">
                     <div class="col-lg-7 hero-content">
-                        <h1 class="hero-title">FIND YOUR NEXT CAR WITH CARX</h1>
+                        <h1 class="hero-title">FIND YOUR NEXT CAR WITH M &amp; S IMPORT LTD</h1>
                         <p class="hero-subtitle">Quality used cars. Competitive prices. Exceptional service.</p>
                         <div class="hero-buttons">
                             <a href="cars.html" class="btn btn-maroon btn-lg">Browse Used Cars</a>
@@ -294,7 +288,7 @@
         </div>
     </section>
 
-    <!-- ========== OUR LATEST OFFERS ========== -->
+    <!-- ========== OUR LATEST OFFERS (SLIDER) ========== -->
     <section class="latest-offers">
         <div class="container">
             <div class="section-header text-center">
@@ -302,7 +296,7 @@
                 <p class="section-subtitle">Explore our latest selection of quality used vehicles.</p>
             </div>
             <div class="vehicle-slider" id="latestOffersSlider">
-                <!-- Cards loaded dynamically from JSON -->
+                <!-- Cards loaded dynamically from cars.js -->
             </div>
         </div>
     </section>
@@ -367,6 +361,302 @@
         </div>
     </section>
 
+    <!-- ========== ALL VEHICLES GRID (4 PER ROW — SAME CARD AS SLIDER) ========== -->
+    <section class="latest-offers" id="allVehiclesGrid">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>ALL VEHICLES</h2>
+                <p class="section-subtitle">Browse our full selection of quality used vehicles.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="1">
+                        <div class="card-img-wrap">
+                            <img src="images/car-1.jpg" alt="BMW 3 Series" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">BMW 3 Series</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 28,500 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£18,995</div>
+                            <p class="card-desc">Immaculate BMW 3 Series with full service history.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="2">
+                        <div class="card-img-wrap">
+                            <img src="images/car-2.jpg" alt="Audi A4" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Audi A4</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 22,100 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£17,450</div>
+                            <p class="card-desc">Refined Audi A4 S line with premium equipment.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="3">
+                        <div class="card-img-wrap">
+                            <img src="images/car-3.jpg" alt="Mercedes C-Class" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes C-Class</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 19,800 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£22,995</div>
+                            <p class="card-desc">Elegant Mercedes C-Class AMG Line, one owner.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="4">
+                        <div class="card-img-wrap">
+                            <img src="images/car-4.jpg" alt="Volkswagen Golf" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Golf</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 15,400 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Manual</span>
+                            </div>
+                            <div class="card-price">£16,450</div>
+                            <p class="card-desc">Popular Golf Life with low mileage and great spec.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="5">
+                        <div class="card-img-wrap">
+                            <img src="images/car-5.jpg" alt="Ford Focus" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Focus</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 24,900 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Manual</span>
+                            </div>
+                            <div class="card-price">£13,995</div>
+                            <p class="card-desc">Sporty Focus ST-Line with excellent economy.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="6">
+                        <div class="card-img-wrap">
+                            <img src="images/car-6.jpg" alt="Nissan Qashqai" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan Qashqai</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 12,300 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£19,995</div>
+                            <p class="card-desc">Family-friendly Qashqai with automatic gearbox.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="7">
+                        <div class="card-img-wrap">
+                            <img src="images/car-7.jpg" alt="Toyota Corolla" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Corolla</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 18,700 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£18,995</div>
+                            <p class="card-desc">Efficient hybrid Corolla with superb reliability.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="8">
+                        <div class="card-img-wrap">
+                            <img src="images/car-8.jpg" alt="Vauxhall Corsa" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vauxhall Corsa</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 9,800 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Manual</span>
+                            </div>
+                            <div class="card-price">£11,450</div>
+                            <p class="card-desc">Great first car — low mileage Corsa SE Edition.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="9">
+                        <div class="card-img-wrap">
+                            <img src="images/car-9.jpg" alt="Kia Sportage" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kia Sportage</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 23,100 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£18,495</div>
+                            <p class="card-desc">Stylish Kia Sportage with generous equipment.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="10">
+                        <div class="card-img-wrap">
+                            <img src="images/car-1.jpg" alt="Peugeot 3008" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Peugeot 3008</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 14,200 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£20,995</div>
+                            <p class="card-desc">Distinctive Peugeot 3008 with i-Cockpit interior.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="11">
+                        <div class="card-img-wrap">
+                            <img src="images/car-2.jpg" alt="Honda Civic" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Honda Civic</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 21,600 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cog"></i> Manual</span>
+                            </div>
+                            <div class="card-price">£15,995</div>
+                            <p class="card-desc">Sporty Honda Civic SR with VTEC Turbo engine.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="vehicle-card" data-id="12">
+                        <div class="card-img-wrap">
+                            <img src="images/car-3.jpg" alt="Range Rover Evoque" loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Range Rover Evoque</h5>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 17,900 miles</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cog"></i> Automatic</span>
+                            </div>
+                            <div class="card-price">£27,995</div>
+                            <p class="card-desc">Premium Evoque with 4x4 capability and luxury.</p>
+                            <div class="card-actions">
+                                VIEW DETAILS ENQUIRE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="cars.html" class="btn btn-maroon btn-lg">VIEW ALL VEHICLES</a>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- ========== IMAGE COLLAGE ========== -->
     <section class="image-collage">
         <div class="container">
@@ -417,12 +707,12 @@
         </div>
     </section>
 
-    <!-- ========== WHY CHOOSE CARX ========== -->
+    <!-- ========== WHY CHOOSE M & S IMPORT LTD ========== -->
     <section class="why-choose">
         <div class="container">
             <div class="section-header text-center">
-                <h2>WHY CHOOSE CARX?</h2>
-                <p class="section-subtitle">We're committed to making your car buying experience exceptional.</p>
+                <h2>WHY CHOOSE M &amp; S IMPORT LTD?</h2>
+                <p class="section-subtitle">We are committed to making your car buying experience exceptional.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
@@ -464,7 +754,7 @@
                     <div class="why-card">
                         <i class="fas fa-handshake"></i>
                         <h5>After-Sales Support</h5>
-                        <p>We're here even after you drive away with your new car.</p>
+                        <p>We are here even after you drive away with your new car.</p>
                     </div>
                 </div>
             </div>
@@ -546,7 +836,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2>WHAT OUR CUSTOMERS SAY</h2>
-                <p class="section-subtitle">Real reviews from real customers who found their perfect car at CarX.</p>
+                <p class="section-subtitle">Real reviews from real customers who found their perfect car at M &amp; S Import LTD.</p>
             </div>
             <div class="reviews-slider" id="reviewsSlider">
                 <div class="review-card">
@@ -557,7 +847,7 @@
                 </div>
                 <div class="review-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"Found the perfect car at a great price. The team at CarX made everything so easy."</p>
+                    <p>"Found the perfect car at a great price. The team made everything so easy."</p>
                     <h6>Sarah Mitchell</h6>
                     <span class="verified">Verified Customer</span>
                 </div>
@@ -569,7 +859,7 @@
                 </div>
                 <div class="review-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"I've bought several cars from CarX and always received excellent service. Highly recommend."</p>
+                    <p>"I have bought several cars from M &amp; S Import LTD and always received excellent service. Highly recommend."</p>
                     <h6>Emma Roberts</h6>
                     <span class="verified">Verified Customer</span>
                 </div>
@@ -581,7 +871,7 @@
                 </div>
                 <div class="review-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"The team went above and beyond to find the right car for me. Thank you CarX!"</p>
+                    <p>"The team went above and beyond to find the right car for me. Thank you M &amp; S Import LTD!"</p>
                     <h6>Laura Davis</h6>
                     <span class="verified">Verified Customer</span>
                 </div>
@@ -609,8 +899,8 @@
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
-                        <img src="images/footer-logo.png" alt="CarX Logo" class="footer-logo" />
-                        <p>Quality used cars and exceptional customer service. We're here to help you find your perfect vehicle.</p>
+                        <img src="images/footer-logo.png" alt="M &amp; S Import LTD Logo" class="footer-logo" />
+                        <p>Quality used cars and exceptional customer service. We are here to help you find your perfect vehicle.</p>
                         <div class="social-links">
                             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -649,14 +939,14 @@
                     <h6>Contact</h6>
                     <ul class="footer-contact-list">
                         <li><i class="fas fa-phone-alt"></i> <a href="tel:01610000000">0161 000 0000</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@carx.co.uk">hello@carx.co.uk</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@msimportltd.co.uk">hello@msimportltd.co.uk</a></li>
                         <li><i class="fas fa-map-marker-alt"></i> Oldham, Greater Manchester, UK</li>
                         <li><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM, Sat: 9AM–5PM, Sun: 10AM–4PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CarX. All Rights Reserved.</p>
+                <p>&copy; 2026 M &amp; S Import LTD. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Cookie Policy</a>
@@ -687,37 +977,50 @@
     <script src="js/cars.js"></script>
     <script src="js/filters.js"></script>
 
-    <!-- ========== CARD CUSTOMIZATION + VIEW DETAILS BUTTON SCRIPT ========== -->
+    <!-- ========== CARD CLEANUP — SAME FOR SLIDER + GRID ========== -->
     <script>
         (function() {
-            /* ============================================================
-               Clean the card, extract the details link, and add a
-               "View Details" button that opens car-details.html?id=X
-               ============================================================ */
             function processCard(card) {
-                // Guard: already processed
                 if (card.dataset.detailProcessed === 'true') return;
                 card.dataset.detailProcessed = 'true';
 
-                /* ---- 1. Remove meta elements ---- */
-                ['.vehicle-meta', '.car-meta', '.card-meta', '.meta'].forEach(function(sel) {
-                    card.querySelectorAll(sel).forEach(function(el) {
-                        el.remove();
-                    });
+                var mainHref = null;
+                card.querySelectorAll('a').forEach(function(a) {
+                    var href = a.getAttribute('href') || '';
+                    if (href.indexOf('car-details.html') !== -1) mainHref = href;
+                });
+                if (!mainHref) {
+                    var id = card.getAttribute('data-id') || card.getAttribute('data-car-id');
+                    if (id) mainHref = 'car-details.html?id=' + id;
+                }
+
+                // Remove all anchors (keep inner content)
+                card.querySelectorAll('a').forEach(function(a) {
+                    while (a.firstChild) a.parentNode.insertBefore(a.firstChild, a);
+                    a.remove();
                 });
 
-                /* ---- 2. Remove description elements ---- */
-                [
-                    '.vehicle-description', '.car-description', '.card-description',
-                    '.description', '.desc', '.vehicle-desc', '.car-desc',
-                    'p.description', 'p.desc'
-                ].forEach(function(sel) {
-                    card.querySelectorAll(sel).forEach(function(el) {
-                        el.remove();
-                    });
+                // Remove old buttons
+                card.querySelectorAll('button, .btn, input[type="button"], input[type="submit"]').forEach(function(el) {
+                    el.remove();
                 });
 
-                /* ---- 3. Remove any <p> that is not a price ---- */
+                // Remove card-actions wrapper
+                card.querySelectorAll('.card-actions, .vehicle-actions, .car-actions, .actions').forEach(function(wrap) {
+                    wrap.remove();
+                });
+
+                // Remove meta
+                card.querySelectorAll('.card-meta, .vehicle-meta, .car-meta, .meta').forEach(function(el) {
+                    el.remove();
+                });
+
+                // Remove description
+                card.querySelectorAll('.card-desc, .vehicle-description, .car-description, .description, .desc').forEach(function(el) {
+                    el.remove();
+                });
+
+                // Remove any <p> that is not a price
                 card.querySelectorAll('p').forEach(function(p) {
                     if (!p.classList.contains('price') &&
                         !p.classList.contains('vehicle-price') &&
@@ -727,50 +1030,18 @@
                     }
                 });
 
-                /* ---- 4. Extract the details link (before removing anchors) ---- */
-                var mainHref = null;
-                card.querySelectorAll('a').forEach(function(a) {
-                    var href = a.getAttribute('href') || '';
-                    if (href.indexOf('car-details.html') !== -1) {
-                        mainHref = href;
-                    }
-                });
-
-                /* ---- 5. Fallback: use data-id ---- */
-                if (!mainHref) {
-                    var id = card.getAttribute('data-id') || card.getAttribute('data-car-id');
-                    if (id) {
-                        mainHref = 'car-details.html?id=' + id;
-                    }
-                }
-
-                /* ---- 6. Remove old anchors (keep their inner content) ---- */
-                card.querySelectorAll('a').forEach(function(a) {
-                    while (a.firstChild) {
-                        a.parentNode.insertBefore(a.firstChild, a);
-                    }
-                    a.remove();
-                });
-
-                /* ---- 7. Remove old buttons ---- */
-                card.querySelectorAll('button, .btn, input[type="button"], input[type="submit"]').forEach(function(el) {
-                    el.remove();
-                });
-
-                /* ---- 8. Remove leftover "View Details" / "Enquire" text ---- */
-                var removeTexts = ['view details', 'enquire', 'enquire now', 'view detail', 'read more'];
+                // Remove any leftover "View Details" / "Enquire" text nodes
+                var removeTexts = ['view details', 'enquire', 'enquire now', 'view detail', 'read more', 'view more', 'details'];
                 card.querySelectorAll('*').forEach(function(el) {
                     if (el.children.length === 0) {
                         var txt = (el.textContent || '').trim().toLowerCase();
-                        if (removeTexts.indexOf(txt) !== -1) {
-                            el.remove();
-                        }
+                        if (removeTexts.indexOf(txt) !== -1) el.remove();
                     }
                 });
 
-                if (!mainHref) return; // nothing to link to
+                if (!mainHref) return;
 
-                /* ---- 9. Add the "View Details" button ---- */
+                // Add the ONLY button: View Details
                 var btn = document.createElement('a');
                 btn.href = mainHref;
                 btn.className = 'btn btn-maroon btn-sm view-details-btn';
@@ -778,74 +1049,40 @@
                 btn.style.marginTop = '0.6rem';
                 btn.style.display = 'inline-block';
 
-                // Best placement: inside .card-actions, else .card-body, else card
-                var actionsWrap = card.querySelector('.card-actions');
                 var bodyWrap = card.querySelector('.card-body');
+                if (bodyWrap) bodyWrap.appendChild(btn);
+                else card.appendChild(btn);
 
-                if (actionsWrap) {
-                    actionsWrap.appendChild(btn);
-                } else if (bodyWrap) {
-                    bodyWrap.appendChild(btn);
-                } else {
-                    card.appendChild(btn);
-                }
-
-                /* ---- 10. Make the whole card clickable ---- */
                 card.style.cursor = 'pointer';
                 card.setAttribute('data-detail-url', mainHref);
                 if (!card.dataset.clickable) {
                     card.dataset.clickable = 'true';
                     card.addEventListener('click', function(e) {
-                        // If user clicked the button (or any link), let the anchor handle it
                         if (e.target.closest('a, button, input, select, textarea')) return;
                         window.location.href = card.getAttribute('data-detail-url');
                     });
                 }
             }
 
-            /* ============================================================
-               Find all cards inside the slider and process them
-               ============================================================ */
-            function processAllCards() {
+            function processAll() {
+                // Slider
                 var slider = document.getElementById('latestOffersSlider');
-                if (!slider) return;
-
-                var cardSelectors = ['.vehicle-card', '.car-card', '.card', '.vehicle-item', '.car-item'];
-                var cards = [];
-                cardSelectors.forEach(function(sel) {
-                    slider.querySelectorAll(sel).forEach(function(el) {
-                        if (cards.indexOf(el) === -1) cards.push(el);
-                    });
-                });
-
-                // Fallback: find cards via any car-details link
-                if (cards.length === 0) {
-                    slider.querySelectorAll('a[href*="car-details.html"]').forEach(function(link) {
-                        var parent = link.parentElement;
-                        while (parent && parent !== slider) {
-                            if (parent.classList.contains('slick-slide') || parent.parentElement === slider) {
-                                break;
-                            }
-                            parent = parent.parentElement;
-                        }
-                        if (parent && parent !== slider && cards.indexOf(parent) === -1) {
-                            cards.push(parent);
-                        }
-                    });
+                if (slider) {
+                    slider.querySelectorAll('.vehicle-card, .car-card, .card, .vehicle-item, .car-item').forEach(processCard);
                 }
-
-                cards.forEach(processCard);
+                // Grid
+                var grid = document.getElementById('allVehiclesGrid');
+                if (grid) {
+                    grid.querySelectorAll('.vehicle-card, .car-card, .card, .vehicle-item, .car-item').forEach(processCard);
+                }
             }
 
-            /* ============================================================
-               Init + watch for dynamically injected cards
-               ============================================================ */
             document.addEventListener('DOMContentLoaded', function() {
-                processAllCards();
+                processAll();
                 var slider = document.getElementById('latestOffersSlider');
                 if (slider && window.MutationObserver) {
                     new MutationObserver(function() {
-                        processAllCards();
+                        processAll();
                     }).observe(slider, {
                         childList: true,
                         subtree: true
@@ -853,11 +1090,12 @@
                 }
             });
 
-            // Extra safety pass after Slick finishes rendering
             window.addEventListener('load', function() {
-                setTimeout(processAllCards, 400);
-                setTimeout(processAllCards, 1200);
+                setTimeout(processAll, 400);
+                setTimeout(processAll, 1200);
             });
+
+            setInterval(processAll, 1500);
         })();
     </script>
 </body>

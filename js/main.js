@@ -5,13 +5,13 @@
  * ============================================================
  */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     // ============================================================
     // 1. GLOBAL VARIABLES
     // ============================================================
-    let allVehicles = [];          // stores all vehicles from JSON
-    let currentFiltered = [];      // stores filtered results
+    let allVehicles = []; // stores all vehicles from JSON
+    let currentFiltered = []; // stores filtered results
     const VEHICLE_API = 'data/cars.json';
 
     // ============================================================
@@ -35,7 +35,7 @@ $(document).ready(function () {
         let html = '';
         const items = limit > 0 ? vehicles.slice(0, limit) : vehicles;
 
-        items.forEach(function (car) {
+        items.forEach(function(car) {
             const badgeHtml = car.badge ? `<span class="card-badge">${car.badge}</span>` : '';
             html += `
                 <div class="vehicle-card">
@@ -95,7 +95,7 @@ $(document).ready(function () {
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 5000,
-                dots: true,
+                dots: false,
                 arrows: false,
                 responsive: [
                     { breakpoint: 1024, settings: { slidesToShow: 2 } },
@@ -109,7 +109,7 @@ $(document).ready(function () {
     // 5. HERO SEARCH FORM
     // ============================================================
     function initHeroSearch() {
-        $('#heroSearchForm').on('submit', function (e) {
+        $('#heroSearchForm').on('submit', function(e) {
             e.preventDefault();
 
             const make = $('#heroMake').val();
@@ -127,7 +127,7 @@ $(document).ready(function () {
         });
 
         // Dynamically populate model dropdown based on make selection
-        $('#heroMake').on('change', function () {
+        $('#heroMake').on('change', function() {
             const selectedMake = $(this).val();
             const modelSelect = $('#heroModel');
             modelSelect.empty().append('<option value="">Any Model</option>');
@@ -135,8 +135,8 @@ $(document).ready(function () {
             if (selectedMake && allVehicles.length) {
                 const models = [...new Set(
                     allVehicles
-                        .filter(car => car.make === selectedMake)
-                        .map(car => car.model)
+                    .filter(car => car.make === selectedMake)
+                    .map(car => car.model)
                 )].sort();
 
                 models.forEach(m => {
@@ -151,14 +151,14 @@ $(document).ready(function () {
     // ============================================================
     function initBackToTop() {
         const btn = $('#backToTop');
-        $(window).on('scroll', function () {
+        $(window).on('scroll', function() {
             if ($(window).scrollTop() > 400) {
                 btn.addClass('show');
             } else {
                 btn.removeClass('show');
             }
         });
-        btn.on('click', function () {
+        btn.on('click', function() {
             $('html, body').animate({ scrollTop: 0 }, 600);
         });
     }
@@ -251,7 +251,7 @@ $(document).ready(function () {
     function init() {
         // Load vehicles
         loadVehicles()
-            .done(function (data) {
+            .done(function(data) {
                 allVehicles = data;
                 currentFiltered = data;
 
@@ -268,7 +268,7 @@ $(document).ready(function () {
                 // Populate hero search model dropdown if make is preselected? We'll let user select.
                 // But we can populate models if a make is already selected via URL params (not needed for hero)
             })
-            .fail(function () {
+            .fail(function() {
                 console.error('Failed to load vehicle data.');
                 // Show fallback message
                 $('#latestOffersSlider').html('<p class="text-center text-muted">Unable to load vehicles. Please try again later.</p>');
@@ -285,8 +285,8 @@ $(document).ready(function () {
 
         // Fade-up on scroll (optional)
         if ($('.fade-up').length) {
-            $(window).on('scroll', function () {
-                $('.fade-up').each(function () {
+            $(window).on('scroll', function() {
+                $('.fade-up').each(function() {
                     const el = $(this);
                     const top = el.offset().top - $(window).scrollTop();
                     if (top < window.innerHeight - 100) {
@@ -305,7 +305,7 @@ $(document).ready(function () {
     init();
 
     // Re-run detail loading if vehicles are loaded later (safety)
-    $(document).ajaxComplete(function () {
+    $(document).ajaxComplete(function() {
         if ($('#vehicleDetailContainer').length && allVehicles.length) {
             loadVehicleDetail();
         }
